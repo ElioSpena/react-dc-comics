@@ -4,16 +4,21 @@ export default function Footer() {
             <div className="container">
                 <div className="flex j-between">
                     <div>
-                        <a id="sign-up-button">Sign-up now!</a>
+                        <a className="sign-up-button">Sign-up now!</a>
                     </div>
 
-                    <nav className="flex gap-10">
+                    <nav className="flex align-center gap-25">
                         <span>follow us</span>
                         <div>
-                            logo
-                            logo
-                            logo
-                            logo
+                            <ul className="flex gap-10">
+                                <li><a href=""><img src="/public/footer-facebook.png" alt="facebook-img" /></a></li>
+                                <li><a href=""><img src="/public/footer-periscope.png" alt="periscope-img" /></a></li>
+                                <li><a href=""><img src="/public/footer-pinterest.png" alt="pinterest-img" /></a></li>
+                                <li><a href=""><img src="/public/footer-twitter.png" alt="twitter-img" /></a></li>
+                                <li><a href=""><img src="/public/footer-youtube.png" alt="youtube-img" /></a></li>
+
+                            </ul>
+
                         </div>
                     </nav>
 

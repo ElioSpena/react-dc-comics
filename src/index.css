@@ -31,6 +31,13 @@ body {
 }
 
 /*Common*/
+/*Header*/
+.header-nav {
+    color: rgb(95, 94, 94);
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+
 /*Main*/
 
 main {
@@ -50,8 +57,13 @@ main {
 }
 
 .faq-bg nav a {
-    color: rgb(188, 188, 188);
+    color: rgb(137, 136, 136);
 
+}
+
+.logo-bg {
+    background-image: url(/public/dc-logo-bg.png);
+    background-size: cover;
 }
 
 /*Footer*/
@@ -62,13 +74,19 @@ footer {
 }
 
 
-#sign-up-button {
+.sign-up-button {
     background-color: inherit;
     color: rgb(255, 255, 255);
     border: 2px solid;
-    border-color: rgb(3, 122, 201);
+    border-color: rgb(6, 133, 236);
     text-transform: uppercase;
     padding: 10px 20px;
+}
+
+footer span {
+    color: rgb(26, 121, 215);
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 /*Utilities*/
@@ -83,6 +101,10 @@ footer {
 
 .align-center {
     align-items: center;
+}
+
+.gap-10 {
+    gap: 10px;
 }
 
 .gap-25 {
