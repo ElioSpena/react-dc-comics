@@ -1,26 +1,30 @@
 export default function Footer() {
     return <>
-        <footer>
-            <section>
-                <ul>
-                    <li>item</li>
-                    <li>item</li>
-                    <li>item</li>
-                    <li>item</li>
-                    <li>item</li>
-                    <li>item</li>
-                </ul>
-            </section>
-            <section>
-                <button>Sign up now!</button>
-                <h2>Follow us</h2>
-                <ul>
-                    <li>logo</li>
-                    <li>logo</li>
-                    <li>logo</li>
-                    <li>logo</li>
-                </ul>
-            </section>
+        <footer className="py-40">
+            <div className="container">
+                <div className="flex j-between">
+                    <div>
+                        <a id="sign-up-button">Sign-up now!</a>
+                    </div>
+
+                    <nav className="flex gap-10">
+                        <span>follow us</span>
+                        <div>
+                            logo
+                            logo
+                            logo
+                            logo
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+
+
         </footer>
+
+
+
+
     </>
 }

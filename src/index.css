@@ -8,6 +8,69 @@ img {
     max-width: 100%;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/*Layout*/
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+}
+
+/*Common*/
+/*Main*/
+
+main {
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+/*Faq*/
+
+.faq-bg {
+    background-image: url(/public/footer-bg.jpg);
+}
+
+.faq-bg nav h4 {
+    color: white;
+    padding: 10px 0;
+}
+
+.faq-bg nav a {
+    color: rgb(188, 188, 188);
+
+}
+
+/*Footer*/
+
+footer {
+    background-color: rgb(50, 50, 50);
+
+}
+
+
+#sign-up-button {
+    background-color: inherit;
+    color: rgb(255, 255, 255);
+    border: 2px solid;
+    border-color: rgb(3, 122, 201);
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
 /*Utilities*/
 
 .flex {
@@ -16,4 +79,33 @@ img {
 
 .j-between {
     justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.gap-25 {
+    gap: 25px;
+}
+
+.py-10 {
+    padding: 10px 0;
+}
+
+.py-40 {
+    padding: 40px 0;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-40 {
+    width: 40%;
+
+}
+
+.w-60 {
+    width: 60%;
 }
