@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*Utilities*/
+
+.flex {
+    display: flex;
+}
+
+.j-between {
+    justify-content: space-between;
+}
