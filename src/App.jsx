@@ -1,7 +1,7 @@
-import Header from './components/Header'
-import Main from './components/Main'
-import Footer from './components/Footer'
-import Faq from './components/Faq'
+import Header from './components/Header';
+import Main from './components/Main';
+import  Footer  from './components/Footer';
+
 export default function App() {
 
   return (
@@ -9,9 +9,7 @@ export default function App() {
       <Header />
 
       <Main />
-
-      <Faq />
-
+      
       <Footer />
     </>
   )

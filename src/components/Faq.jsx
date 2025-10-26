@@ -1,5 +1,5 @@
 export default function Faq() {
-    return <>
+    return (
         <section className="faq-bg">
             <div className="container">
                 <div className="flex">
@@ -59,5 +59,5 @@ export default function Faq() {
                 </div>
             </div >
         </section >
-    </>
+    );
 }
