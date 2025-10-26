@@ -1,6 +1,22 @@
 
 export default function Header() {
-
+const navList = [
+  { name: "characters", url: "/characters" },
+  { name: "comics", url: "/comics" },
+  { name: "movies", url: "/movies" },
+  { name: "tv", url: "/tv" },
+  { name: "games", url: "/games" },
+  { name: "collectibles", url: "/collectibles" },
+  { name: "videos", url: "/videos" },
+  { name: "fans", url: "/fans" },
+  { name: "news", url: "/news" },
+  { name: "shop", url: "/shop" }
+];
+const navListJsx = navList.map((item, index) => {
+    return  <li key={index}>
+    <a href={item.url}>{item.name}</a>
+    </li>
+});
 
     return (
         <header>
@@ -11,16 +27,9 @@ export default function Header() {
                 </div>
                 <nav className="flex header-nav">
                     <ul className="flex align-center gap-25">
-                        <li><a href="">characters</a></li>
-                        <li><a href="">comics</a></li>
-                        <li><a href="">movies</a></li>
-                        <li><a href="">tv</a></li>
-                        <li><a href="">games</a></li>
-                        <li><a href="">collectibles</a></li>
-                        <li><a href="">videos</a></li>
-                        <li><a href="">fans</a></li>
-                        <li><a href="">news</a></li>
-                        <li><a href="">shop</a></li>
+
+                       {navListJsx}
+                     
                     </ul>
                 </nav>
             </div >
