@@ -12,8 +12,11 @@ export default function Main() {
      )); 
 
     return (
+     
         <main className="py-40">
+            
             <div className="container">
+                 <h3 className="badge-title">Current Series</h3>
             <ul className="flex flex-wrap gap-10 align-center j-center">
                
            {  comicsJsx }
@@ -22,5 +25,6 @@ export default function Main() {
 
             </div>
         </main>
+       
     );
 }
