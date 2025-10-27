@@ -13,17 +13,23 @@ export default function Main() {
 
     return (
      
-        <main className="py-40">
+        <main>
             
-            <div className="container">
+            <section className="container">
+                
                  <h3 className="badge-title">Current Series</h3>
-            <ul className="flex flex-wrap gap-10 align-center j-center">
+
+                  <ul className="flex flex-wrap gap-10 align-center j-center">
                
-           {  comicsJsx }
+                          {  comicsJsx }
 
-            </ul>
+                  </ul>
 
+            <div className="text-center">
+                <button>Load More</button>
             </div>
+
+           </section>
         </main>
        
     );
