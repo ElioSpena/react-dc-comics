@@ -185,7 +185,7 @@ const faqNavJsx = faqNav.map((curItem) => {
     for(let i=0; i < curItem.name.length; i++ ) {
         const firstWord = curItem.name[0].toUpperCase();
         const restOfWord = curItem.name.slice(1);
-        capitalizedWord = firstWord  + restOfWord;
+        capitalizedWord = firstWord + restOfWord;
     }
 
 
@@ -226,11 +226,12 @@ const faqNavCol3 = faqNavJsx.slice(23);
                         </ul>
                     </nav>
 
-                    <div className="w-40 logo-bg">
-                      
-                    </div>
+            <div className="w-40 logo-bg">
+
+            </div>
 
                 </div>
+
             </div >
         </section >
     );
