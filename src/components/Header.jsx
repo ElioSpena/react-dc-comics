@@ -1,4 +1,3 @@
-
 export default function Header() {
 const navList = [
   { name: "characters", url: "/characters" },
@@ -12,6 +11,7 @@ const navList = [
   { name: "news", url: "/news" },
   { name: "shop", url: "/shop" }
 ];
+
 const navListJsx = navList.map((item, index) => {
     return  <li key={index}>
     <a href={item.url}>{item.name}</a>

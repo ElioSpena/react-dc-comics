@@ -1,13 +1,54 @@
 import Faq from "./Faq"
 
 export default function Footer() {
+    const socialLinks = [
+        {
+            id: 1,
+            name: "facebook",
+            img: "/footer-facebook.png",
+            url: "" ,
+                       
+        },
+            {
+            id: 2,
+            name: "periscope",
+            img: "/footer-periscope.png",
+            url: ""            
+        },
+            {
+            id:3,
+            name: "pinterest",
+            img: "/footer-pinterest.png",
+            url: ""            
+        },
+            {
+            id:4,
+            name: "twitter",
+            img: "/footer-twitter.png",
+            url: ""            
+        },
+            {
+            id:5,
+            name: "youtube",
+            img: "/footer-youtube.png",
+            url: ""            
+        },
+    ]
+
+    const socialLinksJsx = socialLinks.map((item)=>(
+         <li key={item.id}>
+            <a href={item.url}><img src={item.img} alt={item.name} /></a>
+        </li>
+    ));
+
+
     return (
 
    <footer>
 
     <Faq />
 
-    <div className="py-40">
+        <div className="py-40">
             <div className="container">
                 <div className="flex j-between align-center">
                     <div>
@@ -18,12 +59,7 @@ export default function Footer() {
                         <span>follow us</span>
                         <div>
                             <ul className="flex gap-10">
-                                <li><a href=""><img src="/footer-facebook.png" alt="facebook-img" /></a></li>
-                                <li><a href=""><img src="/footer-periscope.png" alt="periscope-img" /></a></li>
-                                <li><a href=""><img src="/footer-pinterest.png" alt="pinterest-img" /></a></li>
-                                <li><a href=""><img src="/footer-twitter.png" alt="twitter-img" /></a></li>
-                                <li><a href=""><img src="/footer-youtube.png" alt="youtube-img" /></a></li>
-
+                                {socialLinksJsx}
                             </ul>
 
                         </div>
@@ -32,9 +68,9 @@ export default function Footer() {
                 </div>
             </div>
 
-    </div>
+        </div>
 
-   </footer>
+     </footer>
    
     );
      
