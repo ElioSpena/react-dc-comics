@@ -27,9 +27,9 @@ export default function Bonus() {
         }
     ];
 
-    const linkJsx = links.map((curItem)=> (
+    const linkJsx = links.map((curItem, index)=> (
         
-        <a href={curItem.url} className="flex align-center">
+        <a href={curItem.url} className="flex align-center" key={index}>
             <div className="link">
               <img src={curItem.img} alt={curItem.name} />
             </div>
