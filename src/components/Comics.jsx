@@ -1,4 +1,4 @@
-export default function Comics({id, description, thumb, series}) {
+export default function Comics({description, thumb, series}) {
     return ( 
         <li className="col py-10">
             <a href={description}>

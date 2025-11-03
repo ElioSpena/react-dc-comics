@@ -1,39 +1,6 @@
 import Faq from "./Faq"
 
-export default function Footer({faqNav}) {
-    const socialLinks = [
-        {
-            id: 1,
-            name: "facebook",
-            img: "/img/footer-facebook.png",
-            url: "" ,
-                       
-        },
-            {
-            id: 2,
-            name: "periscope",
-            img: "/img/footer-periscope.png",
-            url: ""            
-        },
-            {
-            id:3,
-            name: "pinterest",
-            img: "/img/footer-pinterest.png",
-            url: ""            
-        },
-            {
-            id:4,
-            name: "twitter",
-            img: "/img/footer-twitter.png",
-            url: ""            
-        },
-            {
-            id:5,
-            name: "youtube",
-            img: "/img/footer-youtube.png",
-            url: ""            
-        },
-    ]
+export default function Footer({faqNav, socialLinks}) {
 
     const socialLinksJsx = socialLinks.map((item)=>(
          <li key={item.id}>
