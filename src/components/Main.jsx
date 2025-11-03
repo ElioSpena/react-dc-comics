@@ -1,27 +1,31 @@
+import Comics from "./Comics";
+import Feat from "./Feat";
+import Hero from "./Hero";
 
-import comics from "../comics";
-
-export default function Main() {
-      const comicsJsx = comics.map((item)=> (
-        <li  key={item.id} className="col py-10">
-            <a href={item.description}>
-                <img src={item.thumb} alt={item.series} />
-                 <h5>{item.series.toUpperCase()}</h5>
-            </a>
-        </li>
-     )); 
+export default function Main({comics, links}) {
 
     return (
      
         <main>
-            
+            <Hero />
+
             <section className="container">
                 
                  <h3 className="badge-title">Current Series</h3>
 
                   <ul className="flex flex-wrap gap-10 align-center j-center">
-               
-                          {  comicsJsx }
+
+                 { comics.map(({id, description, thumb, series})=> (
+
+                     <Comics 
+                     id={id}
+                     description={description}
+                     thumb={thumb}
+                     series={series}
+                     />
+
+                  )) 
+                  }
 
                   </ul>
 
@@ -30,6 +34,8 @@ export default function Main() {
             </div>
 
            </section>
+
+           <Feat links={links} />
         </main>
        
     );

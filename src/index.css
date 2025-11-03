@@ -61,6 +61,11 @@ header img  {
     letter-spacing: -0.5px;
     text-transform: uppercase;
 }
+header li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 
 
 
@@ -124,6 +129,7 @@ main button {
     padding-top: 15px;
     font-size: 0.8rem;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 
@@ -163,7 +169,7 @@ main button {
 /*Faq*/
 
 .faq-bg {
-    background-image: url(/public/footer-bg.jpg);
+    background-image: url(/img/footer-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -50px;
@@ -185,7 +191,7 @@ main button {
 }
 
  .logo-bg {
-    background-image: url(/public/dc-logo-bg.png);
+    background-image: url(/img/dc-logo-bg.png);
     background-size: cover;
     
 } 
@@ -269,6 +275,12 @@ footer span {
 
 .flex-wrap {
     flex-wrap: wrap;
+}
+
+.active {
+    border-bottom: 3px solid rgb(26, 121, 215);
+    font-weight: 800;
+    color: rgb(26, 121, 215);
 }
 
 

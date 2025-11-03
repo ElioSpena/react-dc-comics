@@ -5,32 +5,32 @@ export default function Footer() {
         {
             id: 1,
             name: "facebook",
-            img: "/footer-facebook.png",
+            img: "/img/footer-facebook.png",
             url: "" ,
                        
         },
             {
             id: 2,
             name: "periscope",
-            img: "/footer-periscope.png",
+            img: "/img/footer-periscope.png",
             url: ""            
         },
             {
             id:3,
             name: "pinterest",
-            img: "/footer-pinterest.png",
+            img: "/img/footer-pinterest.png",
             url: ""            
         },
             {
             id:4,
             name: "twitter",
-            img: "/footer-twitter.png",
+            img: "/img/footer-twitter.png",
             url: ""            
         },
             {
             id:5,
             name: "youtube",
-            img: "/footer-youtube.png",
+            img: "/img/footer-youtube.png",
             url: ""            
         },
     ]

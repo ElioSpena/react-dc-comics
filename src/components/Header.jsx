@@ -1,34 +1,28 @@
-export default function Header() {
-const navList = [
-  { name: "characters", url: "/characters" },
-  { name: "comics", url: "/comics" },
-  { name: "movies", url: "/movies" },
-  { name: "tv", url: "/tv" },
-  { name: "games", url: "/games" },
-  { name: "collectibles", url: "/collectibles" },
-  { name: "videos", url: "/videos" },
-  { name: "fans", url: "/fans" },
-  { name: "news", url: "/news" },
-  { name: "shop", url: "/shop" }
-];
+import List from "./List";
 
-const navListJsx = navList.map((item, index) => {
-    return  <li key={index}>
-    <a href={item.url}>{item.name}</a>
-    </li>
-});
+export default function Header({navList}) {
 
     return (
         <header>
             <div className="container">
             <div className="flex j-between py-10">
                 <div>
-                    <img src="/dc-logo.png" alt="dc-logo" />
+                    <a href="http://localhost:5173/comics">
+                         <img src="/img/dc-logo.png" alt="dc-logo" />
+                    </a>
+                   
                 </div>
                 <nav className="flex header-nav">
                     <ul className="flex align-center gap-25">
 
-                       {navListJsx}
+                       {navList.map((curLink, index) => {
+                        return (<List 
+                             key={index}
+                             name={curLink.name} 
+                             url={curLink.url}
+                             active={curLink.active}
+                             />)
+                       })}
                      
                     </ul>
                 </nav>
