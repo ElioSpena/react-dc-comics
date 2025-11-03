@@ -4,12 +4,13 @@ import Hero from "./Hero";
 
 export default function Main({comics, links}) {
 
-    return (
+    return (<>
      
         <main>
+           
             <Hero />
-
-            <section className="container">
+      
+            <section className="container py-40">
                 
                  <h3 className="badge-title">Current Series</h3>
 
@@ -18,7 +19,7 @@ export default function Main({comics, links}) {
                  { comics.map(({id, description, thumb, series})=> (
 
                      <Comics 
-                     id={id}
+                     key={id}
                      description={description}
                      thumb={thumb}
                      series={series}
@@ -38,5 +39,5 @@ export default function Main({comics, links}) {
            <Feat links={links} />
         </main>
        
-    );
+   </> );
 }

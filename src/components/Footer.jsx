@@ -1,6 +1,6 @@
 import Faq from "./Faq"
 
-export default function Footer() {
+export default function Footer({faqNav}) {
     const socialLinks = [
         {
             id: 1,
@@ -46,7 +46,7 @@ export default function Footer() {
 
    <footer>
 
-    <Faq />
+    <Faq faqNav={faqNav}/>
 
         <div className="py-40">
             <div className="container">

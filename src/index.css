@@ -73,6 +73,7 @@ header li {
 
 .hero-bg {
     height: 300px;
+    position: relative;
 }
 
 .hero-bg img {
@@ -91,8 +92,6 @@ header li {
 main {
     background-color: rgb(40, 40, 40);
     color: white;
-     position: relative;
-    padding-top: 40px;
 }
 
 main button {
@@ -139,8 +138,7 @@ main button {
     padding: 10px 20px;
     text-transform: uppercase;
     position: absolute;
-    top: -4%;
-    
+    top: 44%;
 }
 
 /*Bonus*/
@@ -151,7 +149,7 @@ main button {
     text-transform: uppercase;
     font-size: 0.7rem;
     position: relative;
-    z-index: 1;
+    
 }
 
 .bg-bonus img {
